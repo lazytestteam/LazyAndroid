@@ -1,7 +1,6 @@
 package lazy.android.interfaces;
 
 import java.util.List;
-import java.util.Map;
 
 public interface Selectable {
     public void selectByVisibleText(String option);

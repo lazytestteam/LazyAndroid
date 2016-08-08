@@ -1,9 +1,6 @@
 package lazy.android.controls;
 import org.openqa.selenium.By;
 
-import lazy.android.interfaces.Clearable;
-import lazy.android.interfaces.Inputable;
-
 /** 
  * @author huangshuli@jd.com
  * @date 2016年7月26日 下午1:57:51 

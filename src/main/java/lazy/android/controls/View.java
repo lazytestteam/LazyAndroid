@@ -1,8 +1,7 @@
 package lazy.android.controls;
 
-import org.openqa.selenium.By;
-
 import lazy.android.interfaces.Clickable;
+import org.openqa.selenium.By;
 
 /** 
  * @author huangshuli@jd.com

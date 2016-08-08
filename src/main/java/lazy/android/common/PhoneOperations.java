@@ -1,17 +1,16 @@
 package lazy.android.common;
 
-import java.io.File;
-import java.io.IOException;
-
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.TouchAction;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.ScreenOrientation;
 import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.File;
+import java.io.IOException;
 
 /**
  * @author huangshuli@jd.com

@@ -1,13 +1,14 @@
 package lazy.android.bean;
 
 import io.appium.java_client.AppiumDriver;
-import java.lang.reflect.Field;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import lazy.android.annotations.Description;
 import lazy.android.annotations.FullIndexXpath;
 import lazy.android.annotations.Xpath;
 import lazy.android.controls.ControlType;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.lang.reflect.Field;
 
 public class BaseBean {
 

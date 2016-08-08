@@ -1,7 +1,7 @@
 package lazy.android.controls;
-import org.openqa.selenium.By;
 
 import lazy.android.interfaces.Checkable;
+import org.openqa.selenium.By;
 
 public class Check extends AbstractControl implements Checkable {
 

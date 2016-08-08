@@ -1,13 +1,9 @@
 package lazy.android.common;
 
 import io.appium.java_client.AppiumDriver;
-
-import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
-
-import com.thoughtworks.selenium.Wait;
 
 /**
  * @author huangshuli@jd.com

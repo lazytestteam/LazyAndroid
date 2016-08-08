@@ -1,31 +1,12 @@
 package demoTest.test;
 
-import lazy.android.common.Find;
+import demoTest.bean.*;
+import io.appium.java_client.AppiumDriver;
 import lazy.android.common.LazyDriver;
 import lazy.android.common.PhoneOperations;
-import lazy.android.controls.ControlType;
-import lazy.android.controls.Select;
-import mx4j.log.Logger;
-import io.appium.java_client.AppiumDriver;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.BrowserType;
-import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import demoTest.bean.JdpayBean;
-import demoTest.bean.LifeBean;
-import demoTest.bean.TestBean;
-import demoTest.bean.UpdateBean;
-import demoTest.bean.Welcome1Bean;
-import demoTest.bean.WelcomeBean;
 
 public class AppiumTestDemo {
 	private AppiumDriver driver;

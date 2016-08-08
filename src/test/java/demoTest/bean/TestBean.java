@@ -1,19 +1,12 @@
 package demoTest.bean;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
 import io.appium.java_client.AppiumDriver;
 import lazy.android.annotations.Description;
 import lazy.android.annotations.FullIndexXpath;
 import lazy.android.annotations.Xpath;
 import lazy.android.bean.BaseBean;
-import lazy.android.controls.Check;
-import lazy.android.controls.Click;
-import lazy.android.controls.PlainText;
-import lazy.android.controls.Select;
-import lazy.android.controls.Text;
-import lazy.android.controls.View;
+import lazy.android.controls.*;
 
 public class TestBean extends BaseBean{
 	

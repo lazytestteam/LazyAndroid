@@ -1,20 +1,14 @@
 package lazy.android.common;
 
 import io.appium.java_client.AppiumDriver;
-
-import java.io.File;
-import java.net.MalformedURLException;
-import java.net.URL;
-
-import org.apache.commons.lang3.StringUtils;
-import org.openqa.selenium.Capabilities;
-import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.thoughtworks.selenium.Wait;
+import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 /**
  * @author huangshuli@jd.com

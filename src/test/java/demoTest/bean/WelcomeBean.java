@@ -5,7 +5,6 @@ import lazy.android.annotations.Description;
 import lazy.android.annotations.Xpath;
 import lazy.android.bean.BaseBean;
 import lazy.android.controls.Click;
-import lazy.android.controls.View;
 
 /** 
  * @author huangshuli@jd.com

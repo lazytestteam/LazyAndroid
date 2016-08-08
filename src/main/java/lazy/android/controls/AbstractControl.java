@@ -1,18 +1,15 @@
 package lazy.android.controls;
 
+import com.thoughtworks.selenium.Wait;
 import io.appium.java_client.AppiumDriver;
 import lazy.android.common.GlobalSettings;
 import lazy.android.exceptions.ElementNotFoundException;
-
-import com.thoughtworks.selenium.Wait;
-
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.testng.Assert;
 
 public abstract class AbstractControl {
 

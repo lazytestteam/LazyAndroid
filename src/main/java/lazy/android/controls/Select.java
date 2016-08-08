@@ -1,13 +1,11 @@
 package lazy.android.controls;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-
+import lazy.android.interfaces.Selectable;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import lazy.android.interfaces.Selectable;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author huangshuli@jd.com

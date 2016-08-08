@@ -4,7 +4,6 @@ import io.appium.java_client.AppiumDriver;
 import lazy.android.annotations.Description;
 import lazy.android.annotations.Xpath;
 import lazy.android.bean.BaseBean;
-import lazy.android.controls.Click;
 import lazy.android.controls.View;
 
 
