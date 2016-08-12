@@ -8,6 +8,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -50,6 +51,7 @@ public abstract class AbstractControl {
 	}
 
 	/**
+	 * 获取控件类型名
 	 * @return
 	 */
 	public ControlType getType() {
@@ -65,6 +67,7 @@ public abstract class AbstractControl {
 	}
 
 	/**
+	 * 获取可以抓到该控件的xpath
 	 * @return
 	 */
 	public String getValidXpath() {
@@ -99,13 +102,16 @@ public abstract class AbstractControl {
 	}
 
 	/**
+	 * 获取控件显示的文字
 	 * @return
 	 */
 	public String getText() {
+		this.expectElementExistOrNot(true);
 		return driver.findElement(By.xpath(getValidXpath())).getText();
 	}
 
 	/**
+	 * 判断控件是否存在，不带超时重试机制
 	 * @return
 	 */
 	public boolean isExists() {
@@ -117,14 +123,17 @@ public abstract class AbstractControl {
 	}
 
 	/**
+	 * 获取控件，同toWebElement()
 	 * @return
 	 */
 	WebElement getControl() {
+		this.expectElementExistOrNot(true);
 		String xpathExpression = getValidXpath();
 		return driver.findElement(By.xpath(xpathExpression));
 	}
 
 	/**
+	 * 判断元素是否存在——不带超时重试机制
 	 * @param xpath
 	 * @return
 	 */
@@ -141,6 +150,7 @@ public abstract class AbstractControl {
 	}
 
 	/**
+	 * 带超时重试机制的控件存在情况判断
 	 * @param expectExist
 	 * @param xpathArray
 	 * @param timeout
@@ -202,5 +212,23 @@ public abstract class AbstractControl {
 			}
 
 		}
+	}
+
+	/**
+	 * 带超时重试机制的控件存在情况判断
+	 * @param expectExist
+	 * @param xpathArray
+	 * @param timeout
+	 */
+	public void expectElementExistOrNot(boolean expectExist) {
+		expectElementExistOrNot(expectExist, Integer.parseInt(GlobalSettings.timeout));
+	}
+	
+	/**
+	 * 通过控件的xpath获取WebElement对象，同getControl()
+	 * @return
+	 */
+	public WebElement toWebElement() {
+		return driver.findElement(By.xpath(this.getValidXpath()));
 	}
 }

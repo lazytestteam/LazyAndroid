@@ -26,6 +26,7 @@ public class Select extends AbstractControl implements Selectable {
 	public void selectByVisibleText(String option) {
 		// TODO Auto-generated method stub
 
+		this.expectElementExistOrNot(true);
 		getControl().click();
 
 		try {
@@ -48,7 +49,7 @@ public class Select extends AbstractControl implements Selectable {
 	@Override
 	public void selectByIndex(int index) {
 		// TODO Auto-generated method stub
-
+		this.expectElementExistOrNot(true);
 		getControl().click();
 
 		try {
@@ -80,6 +81,7 @@ public class Select extends AbstractControl implements Selectable {
 	public void selectByValue(String value) {
 		// TODO Auto-generated method stub
 
+		this.expectElementExistOrNot(true);
 		getControl().click();
 
 		try {
@@ -101,6 +103,7 @@ public class Select extends AbstractControl implements Selectable {
 	@Override
 	public List<String> getAllOptions() {
 		// TODO Auto-generated method stub
+		this.expectElementExistOrNot(true);
 		getControl().click();
 
 		try {
@@ -122,7 +125,6 @@ public class Select extends AbstractControl implements Selectable {
 	}
 
 	// ######################## 通过子控件TextView.getText()去获取
-	// #################################
 	/*
 	 * (non-Javadoc)
 	 * 
@@ -131,7 +133,7 @@ public class Select extends AbstractControl implements Selectable {
 	@Override
 	public String getSelectedOptions() {
 		// TODO Auto-generated method stub
-
+		this.expectElementExistOrNot(true);
 		String Xpath = this.getValidXpath();
 		Xpath += "/android.widget.TextView[1]";
 		WebElement tx = driver.findElement(By.xpath(Xpath));
@@ -142,6 +144,7 @@ public class Select extends AbstractControl implements Selectable {
 	@Override
 	public void clear() {
 		// TODO Auto-generated method stub
+		this.expectElementExistOrNot(true);
 		getControl().clear();
 	}
 

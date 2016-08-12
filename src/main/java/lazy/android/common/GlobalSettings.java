@@ -22,6 +22,9 @@ public class GlobalSettings {
 	public static String baseStorageUrl = prop.getProperty("baseStorageUrl",
 			System.getProperty("user.dir"));
 
+	public static String[] AndroidCtrType = { "TextView", "Button", "CheckBox",
+			"RadioButton", "ImageView", "ToggleButton" };
+
 	public static String getProperty(String property) {
 		return prop.getProperty(property);
 	}
@@ -37,5 +40,5 @@ public class GlobalSettings {
 		}
 		return prop;
 	}
-	
+
 }
